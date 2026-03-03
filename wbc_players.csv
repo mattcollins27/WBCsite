@@ -1,0 +1,605 @@
+name,team,position
+Liam Hicks,Canada,C
+Bo Naylor,Canada,C
+Josh Naylor ,Canada,1B
+Edouard Julien ,Canada,2B
+Matthew Davidson ,Canada,3B
+Abraham Toro ,Canada,3B
+Adam Hall ,Canada,SS
+Otto López ,Canada,SS
+Tyler Black ,Canada,1B
+Jared Young ,Canada,OF
+Owen Caissie,Canada,OF
+Denzel Clarke,Canada,OF
+Tyler O’Neill,Canada,OF
+Jacob Robson,Canada,OF
+Logan Allen ,Canada,P
+Micah Ashman ,Canada,P
+Antoine Jean ,Canada,P
+Adam Macko ,Canada,P
+James Paxton ,Canada,P
+Matt Wilkinson ,Canada,P
+Rob Zastryzny ,Canada,P
+Phillippe Aumont ,Canada,P
+Jordan Balazovic ,Canada,P
+Eric Cerantola ,Canada,P
+Indigo Diaz ,Canada,P
+Brock Dykxhoorn ,Canada,P
+Cal Quantrill ,Canada,P
+Noah Skirrow ,Canada,P
+Michael Soroka ,Canada,P
+Jameson Taillon ,Canada,P
+Jorge Alfaro,Colombia,C
+Daniel Vellojin,Colombia,C
+Carlos Martinez,Colombia,C
+Reynaldo Rodríguez ,Colombia,1B
+Donovan Solano ,Colombia,1B
+Jordan Diaz ,Colombia,2B
+Gio Urshela ,Colombia,3B
+Michael Arroyo ,Colombia,SS
+Dayan Frias ,Colombia,SS
+Carlos Arroyo,Colombia,2B
+Brayan Buelvas,Colombia,OF
+Gustavo Campero,Colombia,OF
+Jesús Marriaga,Colombia,OF
+Harold Ramírez,Colombia,OF
+Adrian Almeida ,Colombia,P
+Rio Gomez ,Colombia,P
+Yapson Gomez ,Colombia,P
+José Quintana ,Colombia,P
+Reiver Sanmartín ,Colombia,P
+Elkin Alcala ,Colombia,P
+Austin Bergner ,Colombia,P
+Danis Correa ,Colombia,P
+Nabil Crismatt ,Colombia,P
+Pedro Garcia ,Colombia,P
+Tayron Guerrero ,Colombia,P
+David Lorduy ,Colombia,P
+Emerson Martinez ,Colombia,P
+Luis Patiño ,Colombia,P
+Jhon Romero ,Colombia,P
+Julio Teherán ,Colombia,P
+Guillo Zuñiga ,Colombia,P
+Omar Hernandez,Cuba,C
+Andrys Pérez,Cuba,C
+Malcom Nuñez ,Cuba,1B
+Yoel Yanqui ,Cuba,1B
+Yiddi Cappe ,Cuba,2B
+Yoán Moncada ,Cuba,3B
+Ariel Martínez ,Cuba,OF
+Erisbel Arruebarruena ,Cuba,SS
+Alexei Ramírez ,Cuba,SS
+Alexander Vargas ,Cuba,SS
+Alfredo Despaigne,Cuba,OF
+Yoelquis Guibert,Cuba,OF
+Leonel Moas,Cuba,OF
+Roel Santos,Cuba,OF
+Naykel Cruz ,Cuba,P
+Daviel Hurtado ,Cuba,P
+Randy Martinez ,Cuba,P
+Liván Moinelo ,Cuba,P
+Darien Núñez ,Cuba,P
+Julio Robaina ,Cuba,P
+Frank Alvarez ,Cuba,P
+Emmanuel Chapman ,Cuba,P
+Josimar Cousin ,Cuba,P
+Denny Larrondo ,Cuba,P
+Yoan López ,Cuba,P
+Raidel Martínez ,Cuba,P
+Yariel Rodriguez ,Cuba,P
+Osiel Rodriguez ,Cuba,P
+Luis Romero Jr. ,Cuba,P
+Pedro Santos ,Cuba,P
+Miguel Amaya,Panama,C
+Leonardo Bernal,Panama,C
+Christian Bethancourt,Panama,C
+Jonathan Araúz ,Panama,2B
+Edmundo Sosa ,Panama,3B
+Johan Camargo ,Panama,1B
+José Caballero ,Panama,SS
+Leo Jiménez ,Panama,SS
+Rubén Tejada ,Panama,SS
+Enrique Bradfield Jr.,Panama,OF
+Jhonny Santos,Panama,OF
+Allen Córdoba,Panama,OF
+Jose Ramos,Panama,OF
+Luis Castillo,Panama,OF
+Logan Allen ,Panama,P
+Alberto Baldonado ,Panama,P
+Miguel Cienfuegos ,Panama,P
+James González ,Panama,P
+Kenny Hernández ,Panama,P
+Andy Otero ,Panama,P
+Dario Agrazal ,Panama,P
+Jaime Barria ,Panama,P
+Paolo Espino ,Panama,P
+Jorge García ,Panama,P
+Miguel Gómez ,Panama,P
+Javy Guerra ,Panama,P
+Ariel Jurado ,Panama,P
+Humberto Mejía ,Panama,P
+Abdiel Mendoza ,Panama,P
+Erian Rodríguez ,Panama,P
+Martín Maldonado,Puerto Rico,C
+Christian Vázquez,Puerto Rico,C
+Nolan Arenado ,Puerto Rico,3B
+Darrell Hernáiz ,Puerto Rico,SS
+Emmanuel Rivera ,Puerto Rico,1B
+Edwin Arroyo ,Puerto Rico,2B
+Luis Vázquez ,Puerto Rico,SS
+Matthew Lugo,Puerto Rico,OF
+Willi Castro,Puerto Rico,OF
+Carlos Cortes,Puerto Rico,OF
+MJ Melendez,Puerto Rico,OF
+Bryan Torres,Puerto Rico,OF
+Heliot Ramos,Puerto Rico,OF
+Eddie Rosario,Puerto Rico,OF
+Raymond Burgos ,Puerto Rico,P
+Jovani Morán ,Puerto Rico,P
+Eduardo Rivera ,Puerto Rico,P
+Gabriel Rodríguez ,Puerto Rico,P
+Fernando Cruz ,Puerto Rico,P
+José De León ,Puerto Rico,P
+Edwin Díaz ,Puerto Rico,P
+José Espada ,Puerto Rico,P
+Rico Garcia ,Puerto Rico,P
+Jorge Lopez ,Puerto Rico,P
+Seth Lugo ,Puerto Rico,P
+Luis Quinones ,Puerto Rico,P
+Angel Reyes ,Puerto Rico,P
+Yacksel Ríos ,Puerto Rico,P
+Elmer Rodríguez ,Puerto Rico,P
+Ricardo Velez ,Puerto Rico,P
+Gabriel Carmo,Brazil,C
+Gabriel Gomes,Brazil,C
+Enzo Hayashida,Brazil,C
+Matheus Silva,Brazil,C
+Dante Bichette Jr. ,Brazil,1B
+Vitor Ito ,Brazil,SS
+Felipe Koragi ,Brazil,2B
+Felipe Mizukosi ,Brazil,3B
+Tiago Nishiyama ,Brazil,1B
+Lucas Rojo ,Brazil,2B
+Leonardo Reginatto ,Brazil,3B
+Gabriel Maciel,Brazil,OF
+Osvaldo Carvalho,Brazil,OF
+Victor Mascai,Brazil,OF
+Lucas Ramirez,Brazil,OF
+Hugo Kanabushi ,Brazil,P
+Oscar Nakaoshi ,Brazil,P
+Enzo Sawayama ,Brazil,P
+Hector Villarroel ,Brazil,P
+Pietro Albanez ,Brazil,P
+Gabriel Barbosa ,Brazil,P
+Joseph Contreras ,Brazil,P
+Tiago Da Silva ,Brazil,P
+Murilo Gouvea ,Brazil,P
+Pedro Lemos ,Brazil,P
+Tomas Lopez ,Brazil,P
+Daniel Missaki ,Brazil,P
+Eric Pardinho ,Brazil,P
+Bo Takahashi ,Brazil,P
+Thyago Vieira ,Brazil,P
+Joao Gabriel Marostica,Brazil,P
+Vitor Takahashi,Brazil,P
+Will Cresswell,Great Britain,C
+Harry Ford,Great Britain,C
+BJ Murray ,Great Britain,1B
+Jazz Chisholm Jr. ,Great Britain,2B
+Ivan Johnson ,Great Britain,2B
+Nate Eaton ,Great Britain,3B
+Lucius Fox ,Great Britain,SS
+Ian Lewis Jr. ,Great Britain,SS
+Nick Ward ,Great Britain,SS
+Kristian Robinson,Great Britain,OF
+Justin Wylie,Great Britain,OF
+Matt Koperniak,Great Britain,OF
+Trayce Thompson,Great Britain,OF
+Nick Wells ,Great Britain,P
+Jack Anderson ,Great Britain,P
+Brendan Beck ,Great Britain,P
+Tristan Beck ,Great Britain,P
+Donovan Benoit ,Great Britain,P
+Chavez Fernandez ,Great Britain,P
+Gary Gill Hill ,Great Britain,P
+Antonio Knowles ,Great Britain,P
+Miles Langhorne ,Great Britain,P
+Ryan Long ,Great Britain,P
+Michael Petersen ,Great Britain,P
+Jack Seppings ,Great Britain,P
+Graham Spraker ,Great Britain,P
+Najer Victor ,Great Britain,P
+Tyler Viza ,Great Britain,P
+Owen Wild ,Great Britain,P
+Vance Worley ,Great Britain,P
+Dylan Covey,Great Britain,P
+Alberto Mineo,Italy,C
+Kyle Teel,Italy,C
+Vinnie Pasquantino ,Italy,1B
+Thomas Saggese ,Italy,2B
+Jon Berti ,Italy,SS
+Andrew Fischer ,Italy,3B
+Giaconino Lasaracina ,Italy,3B
+Sam Antonacci ,Italy,2B
+Zach Dezenzo ,Italy,1B
+Miles Mastrobuoni ,Italy,2B
+Jac Caglianone,Italy,OF
+Dominic Canzone,Italy,OF
+Jakob Marsee,Italy,OF
+Nick Morabito,Italy,OF
+Dante Nori,Italy,OF
+Sam Aldegheri ,Italy,P
+Joe La Sorsa ,Italy,P
+Dan Altavilla ,Italy,P
+Dylan DeLucia ,Italy,P
+Claudio Scotti,Italy,P
+Matt Festa ,Italy,P
+Gordon Graceffo ,Italy,P
+Alek Jacob ,Italy,P
+Michael Lorenzen ,Italy,P
+Ron Marinaccio ,Italy,P
+Kyle Nicolas ,Italy,P
+Aaron Nola ,Italy,P
+Adam Ottavino ,Italy,P
+Gabriele Quattrini ,Italy,P
+Greg Weissert ,Italy,P
+Alejandro Kirk,Mexico,C
+Alexis Wilson,Mexico,C
+Joey Meneses ,Mexico,1B
+Rowdy Tellez ,Mexico,1B
+Jonathan Aranda ,Mexico,2B
+Nick Gonzales ,Mexico,2B
+Jared Serna ,Mexico,2B
+Joey Ortiz ,Mexico,3B
+Nacho Alvarez Jr,Mexico,3B
+Luis Urías ,Mexico,SS
+Jarren Duran,Mexico,OF
+Alek Thomas,Mexico,OF
+Randy Arozarena,Mexico,OF
+Julián Ornelas,Mexico,OF
+Alejandro Osuna,Mexico,OF
+Alexander Armenta ,Mexico,P
+Brennan Bernardino ,Mexico,P
+Robert Garcia ,Mexico,P
+Samy Natera Jr. ,Mexico,P
+Javier Assad ,Mexico,P
+Taj Bradley ,Mexico,P
+Alex Carrillo ,Mexico,P
+Jesús Cruz ,Mexico,P
+Daniel Duarte ,Mexico,P
+Luis Gastelum ,Mexico,P
+Andrés Muñoz ,Mexico,P
+Gerardo Reyes ,Mexico,P
+Roel Ramírez,Mexico,P
+Victor Vodnik ,Mexico,P
+Taijuan Walker ,Mexico,P
+Cal Raleigh,United States,C
+Will Smith,United States,C
+Paul Goldschmidt ,United States,1B
+Bryce Harper ,United States,1B
+Brice Turang ,United States,2B
+Alex Bregman ,United States,3B
+Gunnar Henderson ,United States,SS
+Bobby Witt Jr. ,United States,SS
+Ernie Clement ,United States,3B
+Byron Buxton,United States,OF
+Pete Crow-Armstrong,United States,OF
+Roman Anthony,United States,OF
+Aaron Judge,United States,OF
+Kyle Schwarber,United States,OF
+Matt Boyd ,United States,P
+Garrett Cleavinger ,United States,P
+Clayton Kershaw ,United States,P
+Tarik Skubal ,United States,P
+Gabe Speier ,United States,P
+David Bednar ,United States,P
+Clay Holmes ,United States,P
+Griffin Jax ,United States,P
+Brad Keller ,United States,P
+Nolan McLean ,United States,P
+Mason Miller ,United States,P
+Joe Ryan ,United States,P
+Paul Skenes ,United States,P
+Michael Wacha ,United States,P
+Logan Webb ,United States,P
+Garrett Whitlock ,United States,P
+Christopher Burke,Australia,OF
+Mitch Edwards,Australia,C
+Alex Hall,Australia,C
+Robbie Perkins,Australia,C
+Rixon Wingrove ,Australia,1B
+Travis Bazzana ,Australia,2B
+Curtis Mead ,Australia,3B
+Logan Wade ,Australia,SS
+George Callil ,Australia,SS
+Jarryd Dale ,Australia,SS
+Max Durrington ,Australia,OF
+Robbie Glendinning ,Australia,3B
+Tim Kennelly,Australia,OF
+Aaron Whitefield,Australia,OF
+Ulrich Bojarski,Australia,OF
+Josh Hendrickson ,Australia,P
+Jon Kennedy ,Australia,P
+Cooper Morgan ,Australia,P
+Jack O’Loughlin ,Australia,P
+Blake Townsend ,Australia,P
+Alex Wells ,Australia,P
+Lachlan Wells ,Australia,P
+Kieren Hall ,Australia,P
+Ky Hampton ,Australia,P
+Sam Holland ,Australia,P
+Connor MacDonald ,Australia,P
+Mitch Neunborn ,Australia,P
+Warwick Saupold ,Australia,P
+Todd Van Steensel ,Australia,P
+Coen Wynne ,Australia,P
+Shao-Hung Chiang,Taiwan,C
+Kungkuan Giljegiljaw,Taiwan,C
+Lyle Lin,Taiwan,C
+Hao Yu Lee ,Taiwan,3B
+Nien-Ting Wu ,Taiwan,1B
+Yu Chang ,Taiwan,2B
+Tsung-Che Cheng ,Taiwan,SS
+Kun-Yu Chiang ,Taiwan,SS
+Tzu-Wei Lin ,Taiwan,2B
+Stuart Fairchild,Taiwan,OF
+Chen-Wei Chen,Taiwan,OF
+Chieh-Hsien Chen,Taiwan,OF
+An-Ko Lin,Taiwan,OF
+Kuan-Yu Chen ,Taiwan,P
+Yu-Min Lin ,Taiwan,P
+Wei-En Lin ,Taiwan,P
+Yi Chang ,Taiwan,P
+Po-Yu Chen ,Taiwan,P
+Hao-Chun Cheng ,Taiwan,P
+Ruei-Yang Gu Lin ,Taiwan,P
+Jo-Hsi Hsu ,Taiwan,P
+Chih-Wei Hu ,Taiwan,P
+Kai-Wei Lin ,Taiwan,P
+Shih-Hsiang Lin ,Taiwan,P
+Tzu-Chen Sha ,Taiwan,P
+Yi-Lei Sun ,Taiwan,P
+Jyun-Yue Tseng ,Taiwan,P
+Jun-Wei Zhang ,Taiwan,P
+Chen Zhong-Ao Zhuang ,Taiwan,P
+Matous Bubenik,Czechia,C
+Martin Cervenka,Czechia,C
+Martin Zelenka,Czechia,C
+Ryan Johnson ,Czechia,1B
+Terrin Vavra ,Czechia,2B
+Martin Cervinka ,Czechia,1B
+Vojtech Mensik ,Czechia,3B
+Martin Muzik ,Czechia,1B
+Jan Pospisil ,Czechia,SS
+Milan Prokop ,Czechia,2B
+William Escala,Czechia,OF
+Marek Krejcirik,Czechia,OF
+Max Prejda,Czechia,OF
+Michal Šindelka,Czechia,OF
+Marek Chlup,Czechia,OF
+Jeff Barto ,Czechia,P
+Tomáš Duffek ,Czechia,P
+Lukas Ercoli ,Czechia,P
+Jan Novak ,Czechia,P
+Filip Capka ,Czechia,P
+Lukas Hlouch ,Czechia,P
+Filip Kollmann ,Czechia,P
+Michael Kovala ,Czechia,P
+Marek Minarik ,Czechia,P
+Tomas Ondra ,Czechia,P
+Daniel Padysak ,Czechia,P
+Ondrej Satoria ,Czechia,P
+Martin Schneider ,Czechia,P
+Ondrej Vank ,Czechia,P
+Boris Vecerka ,Czechia,P
+Yuhei Nakamura,Japan,C
+Seishiro Sakamoto,Japan,C
+Kenya Wakatsuki,Japan,C
+Munetaka Murakami ,Japan,1B
+Shugo Maki ,Japan,2B
+Kazuma Okamoto ,Japan,3B
+Teruaki Sato ,Japan,3B
+Sosuke Genda ,Japan,SS
+Kaito Kozono ,Japan,SS
+Taisei Makihara ,Japan,2B
+Ukyo Shuto,Japan,OF
+Kensuke Kondo,Japan,OF
+Masataka Yoshida,Japan,OF
+Shota Morishita,Japan,OF
+Seiya Suzuki,Japan,OF
+Shohei Ohtani,Japan,P
+Yusei Kikuchi ,Japan,P
+Hiroya Miyagi ,Japan,P
+Ryuhei Sotani ,Japan,P
+Shoma Fujihira,Japan,P
+Hiromi Itoh ,Japan,P
+Koki Kitayama ,Japan,P
+Yuki Matsumoto ,Japan,P
+Taisei Ota ,Japan,P
+Tomoyuki Sugano ,Japan,P
+Yumeto Kanemaru,Japan,P
+Hiroto Takahashi ,Japan,P
+Atsuki Taneichi ,Japan,P
+Yoshinobu Yamamoto ,Japan,P
+Chihiro Sumida,Japan,P
+Hyung Jun Kim,South Korea,C
+Dong Won Park,South Korea,C
+Bo Gyeong Moon ,South Korea,1B
+Si Hwan Roh ,South Korea,1B
+Hyeseong Kim ,South Korea,2B
+Min Jae Shin ,South Korea,2B
+Shay Whitcomb ,South Korea,2B
+Do Yeong Kim ,South Korea,3B
+Ju Won Kim ,South Korea,SS
+Jung Hoo Lee,South Korea,OF
+Hae Min Park,South Korea,OF
+Jahmai Jones,South Korea,OF
+Ja Wook Koo,South Korea,OF
+Hyun Bin Moon,South Korea,OF
+Hyun Min Ahn,South Korea,OF
+Young Kyu Kim ,South Korea,P
+Hyun Jin Ryu ,South Korea,P
+Ju Young Son ,South Korea,P
+Seung Ki Song ,South Korea,P
+Dane Dunning ,South Korea,P
+Woo Suk Go ,South Korea,P
+Been Gwak ,South Korea,P
+Woo Joo Jeong ,South Korea,P
+Byeong Hyeon Jo ,South Korea,P
+Young Pyo Ko ,South Korea,P
+Kyung Eun Noh ,South Korea,P
+Riley O’Brien ,South Korea,P
+Yeong Hyun Park ,South Korea,P
+Hyeong Jun So ,South Korea,P
+Yeong Chan You,South Korea,P
+Agustín Ramírez,Dominican Republic,C
+Austin Wells,Dominican Republic,C
+Vladimir Guerrero Jr. ,Dominican Republic,1B
+Carlos Santana ,Dominican Republic,1B
+Ketel Marte ,Dominican Republic,2B
+Junior Caminero ,Dominican Republic,3B
+Manny Machado ,Dominican Republic,3B
+Jeremy Peña ,Dominican Republic,SS
+Geraldo Perdomo ,Dominican Republic,SS
+Amed Rosario ,Dominican Republic,SS
+Oneil Cruz,Dominican Republic,OF
+Julio Rodríguez,Dominican Republic,OF
+Johan Rojas,Dominican Republic,OF
+Juan Soto,Dominican Republic,OF
+Fernando Tatís Jr.,Dominican Republic,OF
+Wandy Peralta ,Dominican Republic,P
+Cristopher Sanchez ,Dominican Republic,P
+Gregory Soto ,Dominican Republic,P
+Sandy Alcántara ,Dominican Republic,P
+Elvis Alvarado ,Dominican Republic,P
+Brayan Bello ,Dominican Republic,P
+Huascar Brazobán ,Dominican Republic,P
+Seranthony Domínguez ,Dominican Republic,P
+Camilo Doval ,Dominican Republic,P
+Carlos Estévez ,Dominican Republic,P
+Dennis Santana ,Dominican Republic,P
+Luis Severino ,Dominican Republic,P
+Juan Mejia,Dominican Republic,P
+Abner Uribe ,Dominican Republic,P
+Albert Abreu ,Dominican Republic,P
+Hendrik Clementina,Netherlands,C
+Chadwick Tromp,Netherlands,C
+Didi Gregorius ,Netherlands,1B
+Ozzie Albies ,Netherlands,2B
+Juremi Profar ,Netherlands,3B
+Xander Bogaerts ,Netherlands,SS
+Sharlon Schoop ,Netherlands,SS
+Ray-Patrick Didder ,Netherlands,OF
+Ceddanne Rafaela ,Netherlands,OF
+Delano Selassa ,Netherlands,OF
+Jurickson Profar,Netherlands,OF
+Dayson Croes,Netherlands,OF
+Druw Jones,Netherlands,OF
+Jamdrick Cornelia ,Netherlands,P
+Ryjeteri Merite ,Netherlands,P
+Jaydenn Estanista ,Netherlands,P
+Wendell Floranus ,Netherlands,P
+Arij Fransen ,Netherlands,P
+Lars Huijer ,Netherlands,P
+Kenley Jansen ,Netherlands,P
+Antwone Kelly ,Netherlands,P
+Jaitoine Kelly ,Netherlands,P
+Kevin Kelly ,Netherlands,P
+Shairon Martis ,Netherlands,P
+Eric Mendez ,Netherlands,P
+Justin Morales ,Netherlands,P
+Shawndrick Oduber ,Netherlands,P
+JC Sulbaran ,Netherlands,P
+Derek West ,Netherlands,P
+Dylan Wilson ,Netherlands,P
+Melvin Novoa,Nicaragua,C
+Ronald Rivera,Nicaragua,C
+Elian Rayo ,Nicaragua,1B
+Emanuel Trujillo ,Nicaragua,1B
+Brandon Leytón ,Nicaragua,2B
+Cheslor Cuthbert ,Nicaragua,3B
+Mark Vientos ,Nicaragua,3B
+Benjamin Alegria ,Nicaragua,2B
+Jose Orozco ,Nicaragua,SS
+Jeter Downs ,Nicaragua,SS
+Freddy Zamora ,Nicaragua,SS
+Ismael Munguia,Nicaragua,OF
+Cristhian Sandoval,Nicaragua,OF
+Omar Mendoza,Nicaragua,OF
+Chase Dawson,Nicaragua,OF
+Juan Montes,Nicaragua,OF
+Danilo Bermudez ,Nicaragua,P
+Dilmer Mejia ,Nicaragua,P
+Oscar Rayo ,Nicaragua,P
+Carlos Teller ,Nicaragua,P
+Kenword Burton ,Nicaragua,P
+Stiven Cruz ,Nicaragua,P
+Osman Gutierrez ,Nicaragua,P
+Duque Hebbert ,Nicaragua,P
+Ronald Medrano ,Nicaragua,P
+Angel Obando ,Nicaragua,P
+JC Ramírez ,Nicaragua,P
+Erasmo Ramírez ,Nicaragua,P
+Carlos Rodríguez ,Nicaragua,P
+Bryan Torres ,Nicaragua,P
+William Contreras,Venezuela,C
+Salvador Perez,Venezuela,C
+Luis Arráez ,Venezuela,1B
+Willson Contreras ,Venezuela,1B
+Gleyber Torres ,Venezuela,2B
+Andrés Giménez ,Venezuela,SS
+Maikel Garcia ,Venezuela,3B
+Eugenio Suárez ,Venezuela,3B
+Ezequiel Tovar ,Venezuela,SS
+Javier Sanoja ,Venezuela,OF
+Jackson Chourio,Venezuela,OF
+Wilyer Abreu,Venezuela,OF
+Ronald Acuña Jr.,Venezuela,OF
+Luinder Avila,Venezuela,P
+Enmanuel De Jesus ,Venezuela,P
+Anthony Molina,Venezuela,P
+Eduardo Rodríguez ,Venezuela,P
+Ricardo Sánchez ,Venezuela,P
+Ranger Suárez ,Venezuela,P
+Angel Zerpa ,Venezuela,P
+Eduard Bazardo ,Venezuela,P
+José Buttó ,Venezuela,P
+Yoendrys Gómez ,Venezuela,P
+Carlos Guzman ,Venezuela,P
+Pablo López ,Venezuela,P
+Andrés Machado ,Venezuela,P
+Jhonathan Díaz,Venezuela,P
+Keider Montero ,Venezuela,P
+Daniel Palencia ,Venezuela,P
+Antonio Senzatela ,Venezuela,P
+Christian Suarez,Venezuela,P
+CJ Stubbs,Israel,C
+Garrett Stubbs,Israel,C
+Cole Carrigg,Israel,SS
+Jake Gelof,Israel,3B
+Spencer Horwitz,Israel,1B
+Noah Mendlinger,Israel,2B
+Matt Mervis,Israel,1B
+Benjamin Rosengard,Israel,2B
+Harrison Bader,Israel,OF
+Troy Johnston,Israel,OF
+Zach Levenson,Israel,OF
+Assaf Lowengart,Israel,OF
+RJ Schreck,Israel,OF
+Charlie Beilenson,Israel,P
+Josh Blum,Israel,P
+Matt Bowman,Israel,P
+Harrison Cohen,Israel,P
+Daniel Federman,Israel,P
+Jordan Geber,Israel,P
+Tommy Kahnle,Israel,P
+Rob Kaminsky,Israel,P
+Dean Kremer,Israel,P
+Max Lazar,Israel,P
+Zack Leban,Israel,P
+Carlos Lequerica,Israel,P
+Josh Mallitz,Israel,P
+Ryan Prager,Israel,P
+Ben Simon,Israel,P
+Robert Stock,Israel,P
+Zack Weiss,Israel,P

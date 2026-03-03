@@ -1,0 +1,368 @@
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+
+<a href="/submissions/">View All Submissions</a>
+
+<form method="POST">
+    {% csrf_token %}
+    <label>Your Name:</label>
+    <input type="text" name="name" required>
+    <br><br>
+
+    <div class="main-layout">
+        <!--Standings on Left-->
+        <div class="rankings-section">
+            <h1>Rank Each Pool</h1>
+            <div class="container">
+                {% for pool, teams in pools.items %}
+                    <div class="pool">
+                        <h2>Pool {{ pool }}</h2>
+
+                        <div class="sortable" id="pool-{{ pool }}">
+                            {% for team in teams %}
+                                <div class="team-box" data-team-id="{{ team.id }}">
+                                    <span class="rank-number"></span>
+                                    <img src="{{ team.logo.url }}" width="40">
+                                    {{ team.name }}
+                                </div>
+                            {% endfor %}
+                        </div>
+
+                        <input type="hidden" name="pool_{{ pool }}" id="input-{{ pool }}">
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!--Lineup in Center-->
+        <div class="lineup-section">
+            <h1 style="margin-top:20px;">Build Your WBC Crush Team</h1>
+
+            <!-- POSITION SLOTS -->
+            <div class="position-slots">
+                {% for pos in positions %}
+                    <div class="position-box" data-position="{{ pos }}">
+                        <div class="position-label">
+                            <strong>{{ pos }}</strong>
+                        </div>
+                        <div class="slot-container"></div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!--Roster Window on Right-->
+        <div class="roster-section">
+            <label>Select Team:</label>
+            <select id="team-select">
+                {% for team in teams_for_dropdown %}
+                    <option value="{{ team.id }}">{{ team.name }}</option>
+                {% endfor %}
+            </select>
+
+            <div class="roster-window" id="roster">
+                 <div id="all-players" style="display:none;">
+                    {% for player in players %}
+                        <div class="player-box"
+                            data-player-id="{{ player.id }}"
+                            data-team="{{ player.team.id }}"
+                            data-position="{{ player.position }}">
+                            {{ player.name }} {{player.position}}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <input type="hidden" name="catcher" id="input-catcher">
+    <input type="hidden" name="first_base" id="input-first_base">
+    <input type="hidden" name="second_base" id="input-second_base">
+    <input type="hidden" name="third_base" id="input-third_base">
+    <input type="hidden" name="shortstop" id="input-shortstop">
+    <input type="hidden" name="outfield_1" id="input-outfield_1">
+    <input type="hidden" name="outfield_2" id="input-outfield_2">
+    <input type="hidden" name="outfield_3" id="input-outfield_3">
+    <input type="hidden" name="pitcher" id="input-pitcher">
+
+    <button type="submit">Submit Rankings/Lineup</button>
+</form>
+
+<script>
+function updateRanks() {
+    document.querySelectorAll('.sortable').forEach(function(container) {
+        container.querySelectorAll('.team-box').forEach(function(box, index) {
+            box.querySelector('.rank-number').textContent = index + 1;
+        });
+    });
+}
+
+document.querySelectorAll('.sortable').forEach(function(el) {
+    new Sortable(el, {
+        animation: 150,
+        onEnd: function () {
+            updateRanks();
+        }
+    });
+});
+
+/* ======================================
+   ROSTER SORTABLE (Right Side Window)
+====================================== */
+
+const rosterEl = document.getElementById('roster');
+
+new Sortable(rosterEl, {
+    group: {
+        name: 'players',
+        pull: true,
+        put: true
+    },
+    animation: 150
+});
+
+/* ======================================
+   POSITION SLOT SORTABLES
+====================================== */
+document.querySelectorAll('.slot-container').forEach(function(slot) {
+
+    new Sortable(slot, {
+
+        group: {
+            name: 'players',
+            pull: true,
+            put: true
+        },
+
+        animation: 150,
+
+        onAdd: function (evt) {
+
+            const player = evt.item;
+            const playerPosition = player.dataset.position;
+
+            const slotBox = evt.to.closest('.position-box');
+            const slotPosition = slotBox.dataset.position;
+
+            // Allow OF into OF1/OF2/OF3
+            const isValid =
+                (slotPosition.startsWith("OF") && playerPosition === "OF") ||
+                (playerPosition === slotPosition);
+
+            if (!isValid) {
+                alert("Invalid position for this slot!");
+                rosterEl.appendChild(player);
+                return;
+            }
+
+            // Handle swap (only 1 player per slot)
+            const existingPlayers = evt.to.querySelectorAll('.player-box');
+
+            if (existingPlayers.length > 1) {
+                rosterEl.appendChild(existingPlayers[0]);
+            }
+        }
+
+    });
+
+});
+
+// Set initial rankings on page load
+updateRanks();
+
+document.querySelector("form").addEventListener("submit", function(e) {
+
+    /* ----------------------------------
+     Save Pool Rankings
+    ---------------------------------- */
+
+    document.querySelectorAll('.sortable').forEach(function(el) {
+        let pool = el.id.split("-")[1];
+        let ids = [];
+
+        el.querySelectorAll('.team-box').forEach(function(box) {
+            ids.push(box.dataset.teamId);
+        });
+
+        document.getElementById("input-" + pool).value = ids.join(",");
+    });
+
+    /* ----------------------------------
+        Save Lineup Data
+    ---------------------------------- */
+    const positionMap = {
+        "C": "catcher",
+        "1B": "first_base",
+        "2B": "second_base",
+        "3B": "third_base",
+        "SS": "shortstop",
+        "OF1": "outfield_1",
+        "OF2": "outfield_2",
+        "OF3": "outfield_3",
+        "P": "pitcher"
+    };
+
+    document.querySelectorAll('.position-box').forEach(function(slot) {
+
+        const position = slot.dataset.position;
+        const player = slot.querySelector('.slot-container .player-box');
+
+        if (player) {
+
+            const fieldName = positionMap[position];
+
+            document.getElementById("input-" + fieldName).value =
+                player.dataset.playerId;
+        }
+    });
+
+    /* ----------------------------------
+       Validate Lineup Is Complete
+    ---------------------------------- */
+
+    let allSlotsFilled = true;
+
+    document.querySelectorAll('.position-box').forEach(function(slot) {
+        // slot has a <strong> label, so we check if a player exists
+        if (slot.querySelector('.slot-container .player-box') === null) {
+            allSlotsFilled = false;
+        }
+    });
+
+    if (!allSlotsFilled) {
+        e.preventDefault();
+        alert("You must fill all lineup positions before submitting!");
+        return;
+    }
+
+});
+
+const allPlayers = document.querySelectorAll("#all-players .player-box");
+
+document.getElementById("team-select").addEventListener("change", function() {
+
+    rosterEl.innerHTML = "";
+
+    let selectedTeam = this.value;
+
+    allPlayers.forEach(function(player) {
+        if (player.dataset.team === selectedTeam) {
+            rosterEl.appendChild(player.cloneNode(true));
+        }
+    });
+
+});
+// Trigger on page load so first team shows players
+document.getElementById("team-select").dispatchEvent(new Event("change"));
+
+</script>
+
+<style>
+body {
+    margin: 0;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.rankings-section {
+    max-width: 550px;
+}
+
+.rankings-section h1 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.rankings-section h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.lineup-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.roster-section {
+    width: 250px;
+}
+
+.position-slots {
+    display: grid;
+    grid-template-columns: 250px;
+    gap: 15px;
+}
+
+.pool {
+    width: 200px;
+}
+
+.rank-number {
+    font-weight: bold;
+    width: 20px;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.team-box {
+    padding: 10px;
+    margin-bottom: 5px;
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 225px;
+    height: 25px;
+}
+
+.position-box {
+    min-height: 30px;
+    border: 2px dashed #aaa;
+    padding: 8px;
+    text-align: center;
+    background: #fafafa;
+}
+
+.roster-window {
+    border: 1px solid #ccc;
+    height: 500px;
+    overflow-y: scroll;
+    padding: 5px;
+}
+
+.player-box {
+    padding: 8px;
+    margin-bottom: 5px;
+    background: #eaeaea;
+    cursor: grab;
+}
+
+form button[type="submit"] {
+    display: block;          /* allows margin auto to work */
+    margin-left: 75%;       /* pushes it to the right */
+    margin-top: 20px;
+
+    padding: 12px 28px;      /* makes it bigger */
+    font-size: 18px;         /* larger text */
+    font-weight: bold;
+
+    cursor: pointer;
+}
+</style>
+

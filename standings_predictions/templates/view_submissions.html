@@ -1,0 +1,148 @@
+<h1>View Submissions</h1>
+<a href="{% url 'submit_prediction' %}">Back to Submit Page</a>
+
+
+<form method="GET">
+    <select name="submission" onchange="this.form.submit()">
+        <option value="">Select a submission</option>
+        {% for submission in submissions %}
+            <option value="{{ submission.id }}"
+                {% if selected_submission and submission.id == selected_submission.id %}
+                    selected
+                {% endif %}
+            >
+                {{ submission.name }}
+            </option>
+        {% endfor %}
+    </select>
+</form>
+
+<br>
+
+<div class="layout">
+    {% if pools %}
+    <div class="rankings-container">
+        {% for pool, teams in pools.items %}
+            <div class="pool">
+                <h2>Pool {{ pool }}</h2>
+
+                {% for team in teams %}
+                    <div class="team-box">
+                        <span class="rank-number">{{ forloop.counter }}</span>
+                        <img src="{{ team.logo.url }}" width="40">
+                        {{ team.name }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="lineup-container">
+        <h2>Lineup</h2>
+
+        {% if selected_submission %}
+        <div class="position-slots">
+
+            {% for pos in positions %}
+            <div class="position-box">
+                <div class="position-label">
+                    <strong>{{ pos }}</strong>
+                </div>
+
+                {% if pos == "C" and selected_submission.catcher %}
+                    <div class="player-box">
+                        {{ selected_submission.catcher.name }}
+                    </div>
+
+                {% elif pos == "1B" and selected_submission.first_base %}
+                    <div class="player-box">
+                        {{ selected_submission.first_base.name }}
+                    </div>
+
+                {% elif pos == "2B" and selected_submission.second_base %}
+                    <div class="player-box">
+                        {{ selected_submission.second_base.name }}
+                    </div>
+
+                {% elif pos == "3B" and selected_submission.third_base %}
+                    <div class="player-box">
+                        {{ selected_submission.third_base.name }}
+                    </div>
+
+                {% elif pos == "SS" and selected_submission.shortstop %}
+                    <div class="player-box">
+                        {{ selected_submission.shortstop.name }}
+                    </div>
+
+                {% elif pos == "OF1" and selected_submission.outfield_1 %}
+                    <div class="player-box">
+                        {{ selected_submission.outfield_1.name }}
+                    </div>
+
+                {% elif pos == "OF2" and selected_submission.outfield_2 %}
+                    <div class="player-box">
+                        {{ selected_submission.outfield_2.name }}
+                    </div>
+
+                {% elif pos == "OF3" and selected_submission.outfield_3 %}
+                    <div class="player-box">
+                        {{ selected_submission.outfield_3.name }}
+                    </div>
+
+                {% elif pos == "P" and selected_submission.pitcher %}
+                    <div class="player-box">
+                        {{ selected_submission.pitcher.name }}
+                    </div>
+
+                {% endif %}
+
+            </div>
+            {% endfor %}
+
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<style>
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.rankings-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.lineup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.position-slots {
+    display: grid;
+    grid-template-columns: 250px;
+    gap: 15px;
+}
+
+.position-box {
+    min-height: 30px;
+    border: 2px dashed #aaa;
+    padding: 8px;
+    text-align: center;
+    background: #fafafa;
+}
+
+.player-box {
+    padding: 8px;
+    margin-top: 5px;
+    background: #eaeaea;
+}
+</style>
